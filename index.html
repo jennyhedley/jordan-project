@@ -20,13 +20,30 @@ tw-story[tags~="black-cat-background"] {  /* the tag added in step 2 */
   background-image: url(./images/black-cat-background.jpg);  /* the image added in step 1 */
   background-size: cover;  /* cover the whole element */
   background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+/* Style the background where the video will appear */
+tw-story[tags~="video"] {
+  background-color: transparent;
+}
+
+/* Style the video element */
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -100; /* Place the video behind everything */
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="black-cat-background" color="red"></tw-tag><tw-passagedata pid="1" name="Into the cave" tags="" position="725,350" size="100,100">&lt;img class=&quot;story-image-big&quot; src=&quot;./images/cave.jpg&quot; alt=&quot;a cave&quot; /&gt;
-I’d always been curious. To my own detriment, really. When I was younger, when we were visiting family in India, I went inside a cave. Took a torch and a couple of cousins, and down we [[went.]] </tw-passagedata><tw-passagedata pid="2" name="went." tags="" position="850,350" size="100,100">They turned back after a while, but I kept going.
+I’d always been curious. To my own detriment, really. When I was younger, when we were visiting family in India, I went inside a cave. Took a torch and a couple of cousins, and down we [[went.]] </tw-passagedata><tw-passagedata pid="2" name="went." tags="video" position="850,350" size="100,100">They turned back after a while, but I kept going.
 
-
-&lt;video width=&quot;640&quot; height=&quot;360&quot; autoplay loop muted&gt;
+&lt;video autoplay loop muted class=&quot;background-video&quot;&gt;
   &lt;source src=&quot;./video/let-you-in.mp4&quot; type=&quot;video/mp4&quot;&gt;
 &lt;/video&gt;
+
+
+
 
 
 
@@ -45,7 +62,11 @@ I’d always been curious. To my own detriment, really. When I was younger, when
 ]
 
 (align:&quot;&lt;==&quot;)+(box:&quot;========XXXXX============&quot;)[He and my uncles had come searching, ]
-(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=========XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX======&quot;)[and they’d freed [[me.]]]</tw-passagedata><tw-passagedata pid="3" name="me." tags="black-cat-background" position="975,350" size="100,100">Curiosity should have killed the cat, but it had just given her an even greater desire to [[know. ]]</tw-passagedata><tw-passagedata pid="4" name="know. " tags="" position="1100,350" size="100,100">
+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=========XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX======&quot;)[and they’d freed [[me.]]]</tw-passagedata><tw-passagedata pid="3" name="me." tags="black-cat-background" position="975,350" size="100,100">Curiosity should have killed the cat, but it had just given her an even greater desire to [[know. ]]
+
+&lt;video width=&quot;640&quot; height=&quot;360&quot; autoplay loop muted&gt;
+  &lt;source src=&quot;./video/let-you-in.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;</tw-passagedata><tw-passagedata pid="4" name="know. " tags="" position="1100,350" size="100,100">
 =|=
 Amma and Papa wanted me to become a doctor, or a lawyer, yet my heart lied with journalism. I’d only been an investigative journalist for a few years when I came across some rumours on a message board. Multiple deaths, always on a full moon.
 =|=
